@@ -1,0 +1,71 @@
+:root{
+  --brand-orange:#e67a00;
+  --brand-navy:#0b3954;
+  --muted:#6b7280;
+  --bg:#f6f9fb;
+  --maxwidth:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:'Poppins',Arial,Helvetica,sans-serif;margin:0;color:#0b2540;background:var(--bg);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--maxwidth);margin:0 auto;padding:1rem}
+.nav{background:linear-gradient(90deg,var(--brand-navy),#0f486e);color:#fff;position:sticky;top:0;z-index:40;box-shadow:0 6px 18px rgba(11,57,84,0.12)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem}
+.brand .logo{height:56px}
+.menu{display:flex;gap:1rem;align-items:center}
+.menu a{color:#fff;text-decoration:none;font-weight:600;padding:.45rem .6rem;border-radius:6px;transition:background .15s}
+.menu a:hover{background:rgba(255,255,255,0.06)}
+.menu-toggle{display:none;background:transparent;border:0;color:#fff;font-size:22px}
+.hero{position:relative;padding:3.5rem 0;overflow:hidden}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(11,57,84,0.45),rgba(230,122,0,0.15));mix-blend-mode:multiply}
+.hero-inner{display:flex;gap:2rem;align-items:center;position:relative;z-index:2}
+.hero-left{flex:1;color:#fff;padding:.5rem 1rem}
+.hero h1{font-size:2.1rem;margin:0 0 .5rem;line-height:1.05}
+.lead{opacity:.95;margin-bottom:1rem}
+.hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
+.btn{display:inline-block;padding:.7rem 1.1rem;border-radius:8px;text-decoration:none;font-weight:700}
+.btn.primary{background:var(--brand-orange);color:#fff}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.12)}
+.hero-right{flex:1;display:flex;justify-content:center}
+.hero-img{width:100%;max-width:520px;border-radius:12px;box-shadow:0 12px 40px rgba(11,57,84,0.18);border:6px solid rgba(255,255,255,0.06)}
+
+/* services */
+.services{padding:2.5rem 0;background:transparent;margin-top:1rem}
+.services h2{margin-bottom:1rem;color:var(--brand-navy)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.service-card{background:#fff;padding:1.2rem;border-radius:12px;box-shadow:0 8px 26px rgba(11,57,84,0.06);text-align:left}
+.service-card .icon{font-size:28px;margin-bottom:.4rem}
+.how{padding:2rem 0}
+.steps{display:flex;gap:1rem;flex-wrap:wrap}
+.step{flex:1;min-width:200px;background:#fff;padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(11,57,84,0.06)}
+.step .num{width:44px;height:44px;border-radius:50%;background:var(--brand-navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:.6rem}
+
+/* gallery */
+.gallery{padding:2rem 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.gallery-grid img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+
+/* about & team */
+.about-hero{padding:2rem 0}
+.mission, .team{background:#fff;padding:1.2rem;border-radius:10px;box-shadow:0 6px 18px rgba(11,57,84,0.04);margin-top:1rem}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem}
+.member img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+/* contact */
+.contact-main{padding:2rem 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.contact-card{background:#fff;padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(11,57,84,0.04)}
+
+/* footer */
+.site-footer{background:#fff;margin-top:2rem;padding:1.2rem;border-top:1px solid #e9f1f8;color:var(--muted)}
+.footer-inner{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;align-items:start}
+.logo-sm{height:48px}
+copyright{display:block;padding:1rem 0;text-align:center;color:var(--muted)}
+
+/* small screens */
+@media(max-width:900px){
+  .hero-inner{flex-direction:column}
+  .menu{display:none}
+  .menu-toggle{display:block}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+}

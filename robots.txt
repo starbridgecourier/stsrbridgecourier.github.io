@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://starbridgecourier.github.io/sitemap.xml

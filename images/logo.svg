@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+  <rect width="400" height="120" fill="#ffffff"/>
+  <g transform="translate(10,10)">
+    <path d="M0 60 L32 60 L48 20 L64 60 L96 60 L56 86 L72 126 L48 100 L24 126 L40 86 Z" fill="#e67a00"/>
+    <rect x="120" y="18" width="260" height="84" rx="6" fill="#0b3954"/>
+    <text x="150" y="68" font-family="Poppins, Arial" font-size="28" fill="#ffffff" font-weight="700">STAR BRIDGE</text>
+    <text x="150" y="94" font-family="Poppins, Arial" font-size="12" fill="#f0b66b">Courier Delivery Service</text>
+  </g>
+</svg>
